@@ -13,3 +13,8 @@ function excludingVatPrice(price){
   return (price === null)? -1 : +((price / 115)* 100).toFixed(2);
 }
 ```
+# How many stairs will Suzuki climb in 20 years?
+```javascript
+return s.reduce((acc,curr) => acc.concat(curr)).reduce((acc,curr) => acc + curr)* 20; 
+}
+```
