@@ -18,3 +18,16 @@ function excludingVatPrice(price){
 return s.reduce((acc,curr) => acc.concat(curr)).reduce((acc,curr) => acc + curr)* 20; 
 }
 ```
+# Parse float
+```javascript
+function parseF(s) {
+let res = Number.parseFloat(s);
+console.log(res)
+return isNaN(res)? null : res;
+}
+```
+# Find Duplicates
+```javascript
+function duplicates(arr) {
+  return arr.filter((el,i) => arr.indexOf(el) === i && arr.lastIndexOf(el) !== i)
+```
