@@ -30,4 +30,38 @@ return isNaN(res)? null : res;
 ```javascript
 function duplicates(arr) {
   return arr.filter((el,i) => arr.indexOf(el) === i && arr.lastIndexOf(el) !== i)
+}
+```
+# Array element parity
+```javascript
+function solve(arr){
+  return arr.find(el => !arr.includes(-el))
+}
+```
+# Sum of Odd Cubed Numbers
+```javascript
+function cubeOdd(arr) {
+let sum = 0;
+for( let i = 0;i < arr.length;i++){
+if (arr[i] % 2 !== 0) 
+sum = sum + arr[i] ** 3;
+if(typeof arr[i] !== 'number') return undefined;
+}
+return sum;
+}
+```
+# Divide and Conquer
+```javascript
+function divCon(x){
+let sum1 = 0;
+let sum2 = 0;
+for(let i = 0;i < x.length;i++){
+ if(typeof x[i] === 'string') 
+ sum1 = sum1 + +(x[i]);
+ console.log(sum1);
+ if(typeof x[i] === 'number')
+ sum2 = sum2 + x[i];
+}
+return sum2 - sum1;
+}
 ```
