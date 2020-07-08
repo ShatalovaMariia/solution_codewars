@@ -65,3 +65,35 @@ for(let i = 0;i < x.length;i++){
 return sum2 - sum1;
 }
 ```
+# Count by X
+```javascript
+function countBy(x, n) {
+  var z = [];
+for(let i = 1;i <= n ;i++){
+  
+  z.push(i * x)
+  }
+  return z;
+}
+```
+#Generate range of integers
+```javascript
+function generateRange(min, max, step){
+let arr = [];
+  for(let i = min;i <= max;i = i+step){
+    arr.push(i)
+}
+return arr;
+}
+```
+# Powers of 2
+```javascript
+function powersOfTwo(n){
+  let arr = [];
+  for(let i = 0; i <= n;i++){
+    arr.push(2 ** i)
+  
+}
+return arr;
+}
+```
