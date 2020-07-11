@@ -97,3 +97,27 @@ function powersOfTwo(n){
 return arr;
 }
 ```
+# Be Concise IV - Index of an element in an array
+```javascript
+let find=(arr, el)=> {
+  let a = arr.indexOf(el)
+  return (a != -1)? a: "Not found";
+}
+```
+# The Office IV - Find a Meeting Room
+```javascript
+function meeting(x){
+ for(let i = 0;i < x.length;i++){
+   if (x[i] === 'O') return x.indexOf(x[i])
+ }
+   return 'None available!'
+}
+```
+# No Loops 2 - You only need one
+```javascript
+function check(a,x){
+  if (a.includes(x))
+  return true
+  else return false
+};
+```
