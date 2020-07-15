@@ -122,3 +122,33 @@ function check(a,x){
   else return false
 };
 ```
+# Train to remove duplicates from an array with filter()
+```javascript
+function unique(arr) {
+return arr.filter((el,i )=>  i === arr.indexOf(el));
+
+}
+```
+#Two to One
+```javascript
+function longest(s1, s2) {
+ let res = (s1 + s2).split('').sort();
+
+ let res2 = res.filter((el,i) => res.indexOf(el) === i);
+ return res2.join('');
+
+}
+```
+# Array element parity
+```javascript
+function solve(arr){
+  return arr.find(el => !arr.includes(-el))
+};
+```
+# Convert number to reversed array of digits
+```javascript
+function digitize(n) {
+ let str = n + '';
+  return str.split('').reverse().map(el => +el)
+}
+```
