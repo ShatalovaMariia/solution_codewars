@@ -152,3 +152,22 @@ function digitize(n) {
   return str.split('').reverse().map(el => +el)
 }
 ```
+# Training JS #29: methods of arrayObject---concat() and join()
+```javascript
+function bigToSmall(arr){
+  let array = [];
+  for (var i=0;i<arr.length;i++){ 
+ array = array.concat(arr[i]);
+  
+  }
+  return array.sort((a,b) => b -a).join('>');
+  
+}
+```
+#Add new item (collections are passed by reference)
+```javascript
+function addExtra( listOfNumbers ){
+    let arr = [13];
+  return listOfNumbers.concat(arr);
+}
+```
