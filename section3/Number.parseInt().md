@@ -171,3 +171,37 @@ function addExtra( listOfNumbers ){
   return listOfNumbers.concat(arr);
 }
 ```
+# Sum of differences in array
+```javascript
+function sumOfDifferences(arr) {
+  if(arr.length < 2) return 0;
+ arr.sort((a, b) => b - a);
+  let arr1 = [];
+  for(let i = 0; i< arr.length - 1;i++){
+    arr1.push(arr[i] - arr[i + 1]);
+    
+  }
+  return arr1.reduce((acc,curr)=> acc + curr);
+}
+```
+# String Templates - Bug Fixing #5
+```javascript
+function buildString(...template){
+  return `I like ${template.join(', ')}!`;
+}
+```
+
+
+# Ones and Zeros
+```javascript
+function binaryArrayToNumber(arr){
+const str = arr.join('');
+  return parseInt(str,2)
+};
+```
+# Enumerable Magic #1 - True for All?
+```javascript
+function all( arr, fun ){
+return arr.every(fun)
+}
+```
